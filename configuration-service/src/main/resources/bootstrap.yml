@@ -1,0 +1,29 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: configuration
+  cloud:
+    config:
+      server:
+        git:
+          uri: 'C:/Users/Dzmitry_Dziachenka/Desktop/MircoServices_Training/Task_1/microservices-configuration'
+
+encrypt:
+  key: secret
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

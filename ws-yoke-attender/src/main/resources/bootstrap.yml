@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: yoke-attender
+  cloud:
+    config:
+      uri: http://localhost:8888
+      #uri: http://configuration:8888

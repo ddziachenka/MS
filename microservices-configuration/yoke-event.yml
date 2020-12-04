@@ -1,0 +1,36 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+  security:
+    user:
+      name: user
+      password: password
+      roles: ENDPOINT_ADMIN
+
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: '{cipher}a181fba68e76bebadd76a46d59dd6ee00cb78276d2254598b909b449198fbf9b'
+    #password: postgres
+
+server:
+  port: 8083
+
+yoke:
+  notify:
+    #url: http://localhost:8082/event
+    url: http://yoke-notify/event
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: true
+  endpoint:
+    health:
+      show-details: always
