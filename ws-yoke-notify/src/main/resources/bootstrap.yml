@@ -3,6 +3,8 @@ spring:
     name: yoke-notify
   cloud:
     config:
-      uri: http://localhost:8888
+      #uri: http://localhost:8888
       #uri: http://configuration:8888
+      discovery:
+        service-id: configuration
 

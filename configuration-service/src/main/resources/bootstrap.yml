@@ -8,7 +8,10 @@ spring:
     config:
       server:
         git:
-          uri: 'C:/Users/Dzmitry_Dziachenka/Desktop/MircoServices_Training/Task_1/microservices-configuration'
+          #uri: 'C:/Users/Dzmitry_Dziachenka/Desktop/MircoServices_Training/Task_1/microservices-configuration'
+          uri: https://github.com/ddziachenka/msconfigs.git
+    discovery:
+      service-id: config-server
 
 encrypt:
   key: secret
